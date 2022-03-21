@@ -10,7 +10,7 @@ const Home = () => {
             We are simply teamed as startup group, where each person is accountable for different 
             part in a project.`}
             </pre>
-            <h2>Explore the job roles</h2>
+            <h2>Explore the Job roles</h2>
         </div>
      );
 }
