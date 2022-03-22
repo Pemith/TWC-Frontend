@@ -59,22 +59,17 @@ pre {
 }
 
 .home button {
-  background-color: #dab785;
-  border: 0px;
-  border-radius: 45px;
-  color: black;
-  font-size: 30px;
-  font-weight: bold;
-  padding: 14px 20px;
-  margin: 20px;
-  width: 250px;
+  background-color: rgb(222, 0, 49);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
   cursor: pointer;
-  margin-top: 28%;
-  margin-left: 1%;
-  margin-right: 4%;
 }
 
 .home button:hover {
