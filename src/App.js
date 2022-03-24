@@ -8,6 +8,8 @@ import Home from './Pages/home';
 import Login from './Pages/login';
 import Dashboard from './Pages/dashboard';
 import Addrole from './Pages/addrole';
+import ApplicantDetails from './Pages/applicantDetails';
+import ApplicantForm from './Pages/applicantForm';
 
 function App() {
   return (
@@ -24,6 +26,12 @@ function App() {
           </Route>
           <Route exact path='/dashboard/:id'>
             <Dashboard/>
+          </Route>
+          <Route exact path='/applicant/:id'>
+            <ApplicantDetails/>
+          </Route>
+          <Route exact path='/apply/:id'>
+            <ApplicantForm/>
           </Route>
           <Route exact path='/addrole'>
             <Addrole/>

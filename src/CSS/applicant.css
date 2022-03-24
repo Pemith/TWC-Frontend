@@ -1,0 +1,107 @@
+.applicant {
+  background: rgb(228, 234, 238);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.applicantBox {
+  font-family: "Quicksand";
+  background: rgba(229, 229, 229, 1);
+  width: 1000px;
+  height: auto;
+  display: flex;
+  border-radius: 20px;
+  padding: 50px;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  position: static;
+  justify-content: center;
+}
+
+.formstyle {
+  max-width: 600px;
+  margin: 0;
+  text-align: left;
+}
+.formstyle label {
+  text-align: left;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.formstyle h1 {
+  font-size: 30px;
+  margin: 0%;
+  margin-bottom: 10%;
+  text-align: center;
+  /* margin-left: 43%; */
+  color: #f1356d;
+  /* margin-bottom: 30px; */
+}
+
+.formstyle p {
+  margin: 0% 0%;
+  margin-bottom: 10%;
+  text-align: center;
+  /* margin-left: 43%; */
+  font-size: 23px;
+  font-weight: bold;
+  color: #f1356d;
+  /* margin-bottom: 30px; */
+}
+
+.formstyle input,
+.formstyle textarea {
+  align-items: center;
+  width: 300px;
+  padding: 10px 20px;
+  margin: 5% 0;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: block;
+  text-align: left;
+  font-size: 15px;
+}
+
+.formstyle select {
+  /* align-items: center; */
+  width: 100%;
+  padding: 10px 20px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  font-size: 15px;
+}
+
+.formstyle button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  padding: 15px 70px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 20%;
+}
+
+.formstyle button:hover {
+  background-color: rgb(60, 184, 221);
+  color: black;
+  transition: 0.3s;
+}

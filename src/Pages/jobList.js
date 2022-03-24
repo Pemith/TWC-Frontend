@@ -6,7 +6,7 @@ const JobList = ({jobs}) => {
         <div className="site-list">
             {jobs.map(job =>(
                 <div className='jblock' key={job._id}>
-                    <Link>
+                    <Link to={`/apply/${job._id}`}>
                         <h2>{job.role}</h2>
                     </Link>
                 </div>
