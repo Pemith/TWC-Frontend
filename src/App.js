@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Home from './Pages/home';
 import Login from './Pages/login';
 import Dashboard from './Pages/dashboard';
+import Addrole from './Pages/addrole';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route exact path='/dashboard/:id'>
             <Dashboard/>
+          </Route>
+          <Route exact path='/addrole'>
+            <Addrole/>
           </Route>
         </Switch>
       </div>

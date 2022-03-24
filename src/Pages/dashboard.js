@@ -8,6 +8,10 @@ const Dashboard = () => {
 
     const [applicants,setApplicants]=useState(null);
 
+    const addRole = (e) =>{
+        window.location='/addrole';
+    }
+
     useEffect(() =>{
         fetch('http://localhost:3900/career/applicants',{
             method:'GET',
@@ -37,6 +41,7 @@ const Dashboard = () => {
             <Navbar/>
             <h2>Applicants who applied for the vacancies</h2>
             <h2>{applicants && <ApplicationList applicants={applicants}/>}</h2>
+            <button onClick={addRole}>Add Job Role</button>
         </div>
      );
 }
