@@ -13,6 +13,7 @@ const Addrole = () => {
     
     const adminLocalId="adminId";
     const adminIdCurrent=localStorage.getItem(adminLocalId);
+    const token=localStorage.getItem('token');
 
     const handleSubmit = (e) =>{
         e.preventDefault();
@@ -21,6 +22,10 @@ const Addrole = () => {
             axios.post("http://localhost:3900/career/job",{
                 role:role,
                 description:description
+            },{
+                headers:{
+                    'x-auth-token':token
+                }
             })
             .then(
                 (response) => {

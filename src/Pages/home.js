@@ -19,7 +19,7 @@ const Home = () => {
         .then(async response =>{
             try {
                 const data=await response.json();
-                console.log('response data', data);
+                // console.log('response data', data);
                 return data;
             } catch (error) {
                 console.log("Error Occured");

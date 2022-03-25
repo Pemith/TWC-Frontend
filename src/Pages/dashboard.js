@@ -7,6 +7,7 @@ import ApplicationList from "./applicationList";
 const Dashboard = () => {
 
     const [applicants,setApplicants]=useState(null);
+    const token=localStorage.getItem('token');
 
     const addRole = (e) =>{
         window.location='/addrole';
@@ -16,7 +17,8 @@ const Dashboard = () => {
         fetch('http://localhost:3900/career/applicants',{
             method:'GET',
             headers:{
-                'Content-Type':'application/json'
+                'Content-Type':'application/json',
+                'x-auth-token':token
             }
         })
         .then(async response =>{

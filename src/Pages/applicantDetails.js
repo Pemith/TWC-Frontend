@@ -8,12 +8,14 @@ const ApplicantDetails = () => {
 
     const {id}=useParams();
     const [applicant,setApplicant]=useState(null);
+    const token=localStorage.getItem('token');
 
     useEffect(() =>{
         fetch(('http://localhost:3900/career/applicants/'+id),{
             method:'GET',
             headers:{
-                'Content-Type':'application/json'
+                'Content-Type':'application/json',
+                'x-auth-token':token
             }
         })
         .then(async response =>{
