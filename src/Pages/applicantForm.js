@@ -15,6 +15,9 @@ const ApplicantForm = () => {
     const [email,setEmail]=useState();
     const [mobile,setMobile]=useState();
 
+    const [uploadedFile, setUploadedFile] = useState ('');
+    const [fileTitle, setFileTitle] = useState ('');
+
     useEffect(() =>{
         fetch(('http://localhost:3900/career/jobs/'+id),{
             method:'GET',
@@ -66,6 +69,10 @@ const ApplicantForm = () => {
             console.log(error.error);
         }   
     }
+    
+    function handleUploadedFile (e) {
+        setUploadedFile (e.target.value);
+    }
 
 
     return ( 
@@ -99,6 +106,14 @@ const ApplicantForm = () => {
                             required
                             value={mobile}
                             onChange={e=>setMobile(e.target.value)}
+                        />
+                        <label>Upload Your CV:</label>
+                        <input
+                            type="file"
+                            name="uploadedFile"
+                            value={uploadedFile}
+                            onChange={handleUploadedFile}
+                            required
                         />
                         <button>Submit</button>
                     </form>
