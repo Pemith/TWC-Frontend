@@ -13,6 +13,7 @@ const ApplicantForm = () => {
     const [job,setJob]=useState();
     const [fullName,setfullName]=useState();
     const [email,setEmail]=useState();
+    const [mobile,setMobile]=useState();
 
     useEffect(() =>{
         fetch(('http://localhost:3900/career/jobs/'+id),{
@@ -46,7 +47,8 @@ const ApplicantForm = () => {
         try {
             axios.post("http://localhost:3900/career/register",{
                 fullName:fullName,
-                email:email
+                email:email,
+                mobile:mobile
             })
             .then((response) =>{
                 console.log(response);
@@ -90,6 +92,13 @@ const ApplicantForm = () => {
                             required 
                             value={email}
                             onChange={e=>setEmail(e.target.value)}
+                        />
+                        <input 
+                            type="text"
+                            placeholder="Mobile Number"
+                            required
+                            value={mobile}
+                            onChange={e=>setMobile(e.target.value)}
                         />
                         <button>Submit</button>
                     </form>

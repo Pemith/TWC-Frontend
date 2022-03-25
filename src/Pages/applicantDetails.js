@@ -49,6 +49,7 @@ const ApplicantDetails = () => {
                 <article>
                     <h1>Applicant Name: {applicant && applicant.fullName}</h1>
                     <h1>Email: {applicant && applicant.email}</h1>
+                    <h1>Mobile: {applicant && applicant.mobile}</h1>
                 </article>
 
             </div>
